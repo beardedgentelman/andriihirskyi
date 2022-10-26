@@ -238,6 +238,7 @@ body{
     /* ----------End burger------ */
 
 .header{
+    position: -webkit-sticky;
     position: sticky;
     width: 100%;
     top: 0px;
@@ -347,7 +348,11 @@ body{
     background: #373737;
     border: 5px solid #18171B;
     box-shadow: 0px 5px 30px #878787;
-    transition: background .3s;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
 }
 
 .main__button-skills:hover{
@@ -357,7 +362,8 @@ body{
 }
 
 .main__button-skills:hover .anim{
-    animation: roundHtml 4s linear infinite;
+    -webkit-animation: roundHtml 4s linear infinite;
+            animation: roundHtml 4s linear infinite;
 }
 
 .first-color-btn-txt{
@@ -403,6 +409,8 @@ body{
 }
 
 .main__list{
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     margin: 0 auto;
     display: none;
@@ -481,7 +489,8 @@ body{
 }
 
 .img{
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     height: 100%;
     width: 100%;
     border-radius: 15px;
@@ -655,7 +664,8 @@ body{
     overflow: hidden;
 }
 
-
+@-webkit-keyframes roundHtml {
+}
 
 @keyframes roundHtml {
 }
@@ -801,6 +811,8 @@ body{
         display: block;
     }
     .phone-number{
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
         width: fit-content;
         margin: 0 auto;
     }
